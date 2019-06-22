@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="collect" namespace="/" extends="struts-default">
+        <action name="addlike" class="com.action.CollectAction" method="addlike">
+            <result name="success">/collect.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+
+        <action name="cancel" class="com.action.CollectAction" method="cancel">
+            <result name="success">/collect.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+
+        <action name="showlike" class="com.action.CollectAction" method="showlike">
+            <result name="ok">/collect.jsp</result>
+        </action>
+
+        <action name="show" class="com.action.CollectAction" method="show">
+            <result name="ok">/show.jsp</result>
+        </action>
+
+        <action name="select" class="com.action.CollectAction" method="select">
+            <result name="ok">/select.jsp</result>
+        </action>
+    </package>
+</struts>
