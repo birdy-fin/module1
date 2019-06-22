@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: s5
-  Date: 2019/5/31
-  Time: 15:37
+  Date: 2019/5/30
+  Time: 15:02
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page import="fin.Dao.StoreDao" %>
@@ -10,10 +10,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>修改成功页面</title>
+    <title>添加成功页面</title>
 </head>
-
-<style>
+    <style>
     *{
         padding: 0;
         margin: 0;
@@ -130,7 +129,7 @@
 <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-<script src="js/ajax.js"></script>
+<script src="../js/ajax.js"></script>
 
 <script>
     $(function() {
@@ -141,35 +140,34 @@
 </script>
 
 <body>
-
 <div id="header">
-    <h3><img src="img/7.jpg">商城管理后台</h3>
+    <h3><img src="../img/7.jpg">商城管理后台</h3>
 </div>
 
 <div id="nav">
-    <h4><img src="img/1.jpg">后台管理</h4>
+    <h4><img src="../img/1.jpg">后台管理</h4>
     <ul>
-        <li><span><img src="img/5.jpg"></span>用户管理</li>
+        <li><span><img src="../img/5.jpg"></span>用户管理</li>
         <li >
-            <span><img src="img/4.jpg"></span>商品管理
+            <span><img src="../img/4.jpg"></span>商品管理
             <div class="content">
                 <p><a href="readitem.action" style="color: lightslategray" style="font-weight:bold" >所有商品</a></p>
             </div>
         </li>
-        <li><span><img src="img/4.jpg"></span>订单管理</li>
+        <li><span><img src="../img/4.jpg"></span>订单管理</li>
     </ul>
 </div>
 <div class="message">
-    <h2>您修改的商品信息如下：</h2>
-<hr />
+<h2>您添加的商品信息如下：</h2>
+    <hr />
     <p>编号：<s:property value="item.num"></s:property></p>
-<br />
+    <br />
     <p>标题：<s:property value="item.title"></s:property></p>
-<br />
+    <br />
     <p>价格：<s:property value="item.price"></s:property></p>
-<br />
+    <br />
     <p>数量：<s:property value="item.amount"></s:property></p>
-<br />
+    <br />
     <p>描述：<s:property value="item.describe"></s:property></p>
 <br />
 </div>

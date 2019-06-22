@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <!--<constant name="struts.devMode" value="true"/>-->
+
+    <package name="ann" namespace="/ann" extends="struts-default">
+
+    <!--<global-results >
+        <result type="json" name="json"></result>
+    </global-results>-->
+
+    <action name="readod" class="ly.action.OrderAction" method="readod">
+        <result name="success">goodOrderList.jsp</result>
+        <result name="error">indexht.jsp</result>
+    </action>
+        <action name="deleteOrder" class="ly.action.OrderAction" method="deleteOrder">
+            <result  type="redirectAction" name="success">readod</result>
+            <result name="error">goodOrderList.jsp</result>
+        </action>
+        <action name="selectLikeOrder" class="ly.action.OrderAction" method="selectLikeOrder">
+            <result  name="success">goodOrderList.jsp</result>
+            <result name="error">goodOrderList.jsp</result>
+        </action>
+
+        <action name="selectLikeUser" class="ly.action.UserAction" method="selectLikeUser">
+            <result  name="success">userOrder.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+    </package>
+</struts>

@@ -137,7 +137,7 @@
 <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-<script src="js/ajax.js"></script>
+<script src="../js/ajax.js"></script>
 
 <script>
     $(function() {
@@ -151,20 +151,20 @@
 </head>
 <body>
 <div id="header">
-    <h3><img src="img/7.jpg">商城管理后台</h3>
+    <h3><img src="../img/7.jpg">商城管理后台</h3>
 </div>
 
 <div id="nav">
-    <h4><img src="img/1.jpg">后台管理</h4>
+    <h4><img src="../img/1.jpg">后台管理</h4>
     <ul>
-        <li><span><img src="img/5.jpg"></span>用户管理</li>
+        <li><span><img src="../img/5.jpg"></span>用户管理</li>
         <li >
-            <span><img src="img/4.jpg"></span>商品管理
+            <span><img src="../img/4.jpg"></span>商品管理
             <div class="content">
                 <p><a href="readitem.action" style="color: lightslategray" style="font-weight:bold" >所有商品</a></p>
             </div>
         </li>
-        <li><span><img src="img/4.jpg"></span>订单管理</li>
+        <li><span><img src="../img/4.jpg"></span>订单管理</li>
     </ul>
 </div>
 

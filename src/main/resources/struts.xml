@@ -4,44 +4,16 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
-
 <struts>
 
-    <package name="user" namespace="/" extends="struts-default,json-default">
+    <!--<constant name="struts.devMode" value="true"/>-->
 
-        <global-results >
-            <result type="json" name="json"></result>
-        </global-results>
+    <!--<package name="user" namespace="/" extends="struts-default">
+    </package>-->
 
-        <action name="readitem" class="fin.action.StoreAction" method="readitem">
-            <result name="success">/storelist.jsp</result>
-            <result name="error">/index.jsp</result>
-        </action>
+    <include file="struts-fin.xml"></include>
+    <include file="struts-ly.xml"></include>
 
 
-        <action name="itemadd" class="fin.action.StoreAction" method="itemadd">
-            <result name="success">/itemadd1.jsp</result>
-            <result name="error">/itemadd.jsp</result>
 
-        </action>
-
-        <action name="itemcorr" class="fin.action.StoreAction" method="itemcorr">
-            <result name="success">/itemcorr1.jsp</result>
-        </action>
-
-
-        <action name="itemdelete" class="fin.action.StoreAction" method="itemdelete">
-            <result name="success">/delete1.jsp</result>
-            <result name="error">/index.jsp</result>
-        </action>
-
-        <action name="validation" class="fin.action.StoreAction" method="validation">
-        </action>
-
-        <action name="rereadItem" method="rereadItem" class="fin.action.StoreAction">
-        <result name="success">storelist.jsp</result>
-        <result name="error">index.jsp</result>
-        </action>
-
-    </package>
 </struts>
