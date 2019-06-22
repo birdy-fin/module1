@@ -1,4 +1,4 @@
-package action;
+package fin.action;
 
 /**
  * Created by s5 on 2019/5/20.

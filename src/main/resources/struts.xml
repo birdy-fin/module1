@@ -13,32 +13,32 @@
             <result type="json" name="json"></result>
         </global-results>
 
-        <action name="readitem" class="action.StoreAction" method="readitem">
+        <action name="readitem" class="fin.action.StoreAction" method="readitem">
             <result name="success">/storelist.jsp</result>
             <result name="error">/index.jsp</result>
         </action>
 
 
-        <action name="itemadd" class="action.StoreAction" method="itemadd">
+        <action name="itemadd" class="fin.action.StoreAction" method="itemadd">
             <result name="success">/itemadd1.jsp</result>
             <result name="error">/itemadd.jsp</result>
 
         </action>
 
-        <action name="itemcorr" class="action.StoreAction" method="itemcorr">
+        <action name="itemcorr" class="fin.action.StoreAction" method="itemcorr">
             <result name="success">/itemcorr1.jsp</result>
         </action>
 
 
-        <action name="itemdelete" class="action.StoreAction" method="itemdelete">
+        <action name="itemdelete" class="fin.action.StoreAction" method="itemdelete">
             <result name="success">/delete1.jsp</result>
             <result name="error">/index.jsp</result>
         </action>
 
-        <action name="validation" class="action.StoreAction" method="validation">
+        <action name="validation" class="fin.action.StoreAction" method="validation">
         </action>
 
-        <action name="rereadItem" method="rereadItem" class="action.StoreAction">
+        <action name="rereadItem" method="rereadItem" class="fin.action.StoreAction">
         <result name="success">storelist.jsp</result>
         <result name="error">index.jsp</result>
         </action>

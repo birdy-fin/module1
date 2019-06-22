@@ -1,4 +1,4 @@
-package Dao;
+package fin.Dao;
 
 import java.sql.*;
 
